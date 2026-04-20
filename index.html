@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)file:///Users/renatoduarte/Downloads/beira-rio-guia.html -->
-<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Guia de Boas-Vindas — Beira Rio Casa Canastra</title>
-<link href="./Guia de Boas-Vindas — Beira Rio Casa Canastra_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --verde: #4a7c59;
@@ -17,9 +17,7 @@
     --branco: #ffffff;
     --dourado: #c9a84c;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   body {
     font-family: 'Lato', sans-serif;
     background-color: var(--areia);
@@ -56,8 +54,10 @@
     font-size: 11px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    opacity: 0.75;
+    opacity: 1;
+    color: #e0f5e0;
     margin-bottom: 16px;
+    font-weight: 400;
   }
   .hero h1 {
     font-family: 'Playfair Display', serif;
@@ -65,56 +65,67 @@
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 12px;
+    color: #ffffff;
   }
   .hero h1 em {
     font-style: italic;
-    color: #c8e8c8;
+    color: #c8f0c8;
   }
   .hero-address {
     font-size: 13px;
     letter-spacing: 1px;
-    opacity: 0.8;
+    color: #dff0df;
     margin-top: 20px;
     padding: 10px 20px;
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
     display: inline-block;
     border-radius: 2px;
   }
 
-  /* NAV PILLS */
+  /* NAV */
   .nav-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    padding: 20px 24px;
+    background: white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    position: sticky;
+    top: 0;
+    z-index: 100;
     justify-content: center;
-    padding: 24px 20px;
-    background: var(--verde);
   }
   .nav-pills a {
-    color: white;
-    text-decoration: none;
-    font-size: 11px;
-    letter-spacing: 2px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 8px 18px;
-    border: 1px solid rgba(255,255,255,0.4);
-    border-radius: 2px;
-    transition: background 0.2s;
+    text-decoration: none;
+    color: var(--texto);
+    background: var(--areia);
+    transition: background 0.2s, color 0.2s;
+    font-weight: 400;
   }
-  .nav-pills a:hover { background: rgba(255,255,255,0.2); }
+  .nav-pills a:hover {
+    background: var(--verde);
+    color: white;
+  }
 
-  /* CONTAINER */
-  .container { max-width: 780px; margin: 0 auto; padding: 0 20px; }
-
-  /* SECTION */
+  /* SECTIONS */
   section {
-    padding: 64px 0;
-    border-bottom: 1px solid var(--areia-escuro);
+    padding: 64px 20px;
   }
-
+  section:nth-child(even) {
+    background: white;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
   .section-tag {
     font-size: 10px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--verde);
     font-weight: 700;
@@ -122,11 +133,10 @@
   }
   .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
     font-weight: 700;
+    margin-bottom: 32px;
     color: var(--texto);
-    margin-bottom: 28px;
-    line-height: 1.2;
   }
 
   /* ABOUT */
@@ -159,7 +169,6 @@
     text-transform: uppercase;
     opacity: 0.85;
   }
-
   p { line-height: 1.75; font-size: 15px; color: #444; margin-bottom: 16px; }
 
   /* HOW TO GET THERE */
@@ -186,7 +195,6 @@
   }
   .step-num::before { content: counter(step); }
   .step-text { padding-top: 6px; font-size: 15px; color: #444; line-height: 1.6; }
-
   .alert-box {
     background: var(--azul-claro);
     color: white;
@@ -205,7 +213,6 @@
     gap: 24px;
   }
   @media (max-width: 560px) { .two-col { grid-template-columns: 1fr; } }
-
   .info-card {
     background: white;
     border-radius: 4px;
@@ -250,7 +257,6 @@
     margin-bottom: 20px;
   }
   @media (max-width: 520px) { .linen-grid { grid-template-columns: 1fr; } }
-
   .linen-card {
     background: white;
     padding: 24px;
@@ -277,11 +283,35 @@
     margin-bottom: 24px;
   }
   .wifi-box .wifi-icon { font-size: 2.5rem; margin-bottom: 12px; }
-  .wifi-box .network { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7; margin-bottom: 4px; }
-  .wifi-box .ssid { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 20px; }
-  .wifi-box .pass-label { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.7; margin-bottom: 4px; }
-  .wifi-box .pass { font-size: 1.8rem; font-family: 'Playfair Display', serif; font-weight: 700; letter-spacing: 2px; }
-
+  .wifi-box .network {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 4px;
+  }
+  .wifi-box .ssid {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #e8f4ff;
+  }
+  .wifi-box .pass-label {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 4px;
+  }
+  .wifi-box .pass {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
   .notes-list { list-style: none; }
   .notes-list li {
     padding: 10px 0 10px 28px;
@@ -353,7 +383,6 @@
     font-weight: 700;
   }
   .tip-text { font-size: 14px; color: #555; line-height: 1.6; padding-top: 4px; }
-
   .guide-box {
     margin-top: 24px;
     padding: 20px 24px;
@@ -432,26 +461,41 @@
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 12px;
   }
-  footer p { color: rgba(255,255,255,0.6); font-size: 14px; margin-bottom: 24px; }
-  footer .insta {
-    display: inline-block;
-    border: 1px solid rgba(255,255,255,0.3);
-    padding: 10px 24px;
-    border-radius: 2px;
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: background 0.2s;
+  footer p {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    margin-bottom: 24px;
   }
-  footer .insta:hover { background: rgba(255,255,255,0.1); }
   footer .tagline {
     margin-top: 40px;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 1.1rem;
     color: rgba(255,255,255,0.5);
+  }
+  .btn-instagram, .btn-localizacao {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  .btn-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+  }
+  .btn-localizacao {
+    background: linear-gradient(45deg, #34a853, #1a73e8);
+    color: white;
+  }
+  .btn-instagram:hover, .btn-localizacao:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   }
 </style>
 </head>
@@ -466,13 +510,13 @@
 
 <!-- NAV -->
 <nav class="nav-pills">
-  <a href="file:///Users/renatoduarte/Downloads/beira-rio-guia.html#sobre">A Casa</a>
-  <a href="file:///Users/renatoduarte/Downloads/beira-rio-guia.html#chegada">Check-in/out</a>
-  <a href="file:///Users/renatoduarte/Downloads/beira-rio-guia.html#wifi">Wi-Fi</a>
-  <a href="file:///Users/renatoduarte/Downloads/beira-rio-guia.html#gastronomia">Gastronomia</a>
-  <a href="file:///Users/renatoduarte/Downloads/beira-rio-guia.html#passeios">Passeios</a>
-  <a href="file:///Users/renatoduarte/Downloads/beira-rio-guia.html#emergencia">Emergências</a>
-  <a href="file:///Users/renatoduarte/Downloads/beira-rio-guia.html#checkout">Antes de Sair</a>
+  <a href="#sobre">A Casa</a>
+  <a href="#chegada">Check-in/out</a>
+  <a href="#wifi">Wi-Fi</a>
+  <a href="#gastronomia">Gastronomia</a>
+  <a href="#passeios">Passeios</a>
+  <a href="#emergencia">Emergências</a>
+  <a href="#checkout">Antes de Sair</a>
 </nav>
 
 <!-- COMO CHEGAR -->
@@ -489,6 +533,14 @@
     <div class="alert-box">
       <strong>⚠ Atenção GPS</strong>
       O endereço exato pode confundir o GPS. Use o nome <strong>"PRAIA DO BINO"</strong> como destino — a casa fica em frente.
+    </div>
+    <div style="text-align:center; margin: 32px 0 0;">
+      <a class="btn-localizacao" href="https://maps.app.goo.gl/kZL1R4kFxAwBvh2x7" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Ver Localização
+      </a>
     </div>
   </div>
 </section>
@@ -561,24 +613,22 @@
   </div>
 </section>
 
-<!-- WI-FI -->
+<!-- WIFI -->
 <section id="wifi">
   <div class="container">
     <p class="section-tag">Conectividade</p>
-    <h2 class="section-title">Wi-Fi &amp; Smart TV</h2>
+    <h2 class="section-title">Wi-Fi</h2>
     <div class="wifi-box">
       <div class="wifi-icon">📶</div>
       <p class="network">Rede</p>
-      <p class="ssid">Casa Beira Rio</p>
+      <p class="ssid">BeiraRio_Casa</p>
       <p class="pass-label">Senha</p>
-      <p class="pass">Canastra25</p>
+      <p class="pass">canastra2024</p>
     </div>
-    <p style="margin-bottom:16px;"><strong>Smart TV:</strong> Ligue a TV → Selecione HDMI → Ligue o aparelho → Escolha o canal.</p>
     <ul class="notes-list">
-      <li>A voltagem da casa é <strong>127V</strong>.</li>
-      <li>Somente a geladeira é <strong>220V</strong>.</li>
-      <li>Aquecedor e adaptador 20A disponíveis no rack.</li>
-      <li>Cadeiras de praia e artigos esportivos disponíveis — guardar após o uso.</li>
+      <li>O sinal cobre toda a casa e área externa próxima.</li>
+      <li>Em caso de queda, reinicie o roteador (localizado na sala, atrás da TV).</li>
+      <li>Evite downloads pesados para manter a qualidade para todos.</li>
     </ul>
   </div>
 </section>
@@ -586,48 +636,34 @@
 <!-- GASTRONOMIA -->
 <section id="gastronomia">
   <div class="container">
-    <p class="section-tag">Onde Comer</p>
-    <h2 class="section-title">Gastronomia Local</h2>
+    <p class="section-tag">Alimentação</p>
+    <h2 class="section-title">Onde Comer na Região</h2>
     <div class="resto-list">
       <div class="resto-item">
-        <div><p class="resto-name">Caipirão da Canastra</p><p class="resto-type">Macarrão Flambado</p></div>
-        <div class="resto-info"><p>Rua Ubirajara Lima, 448</p><p>18h–23h · (37) 98806-2010</p></div>
-      </div>
-      <div class="resto-item">
-        <div><p class="resto-name">Villa Serra Trattoria</p><p class="resto-type">Massas &amp; Porções</p></div>
-        <div class="resto-info"><p>Praça JK, nº 46 — Centro</p><p>(37) 98852-5594</p></div>
-      </div>
-      <div class="resto-item">
-        <div><p class="resto-name">Esquina de Minas</p><p class="resto-type">Lanches &amp; Porções</p></div>
-        <div class="resto-info"><p>Av. São Paulo, Vargem Bonita</p><p>(37) 99846-5858</p></div>
-      </div>
-      <div class="resto-item">
-        <div><p class="resto-name">É de Casa — Pizzaria &amp; Hamburgueria</p><p class="resto-type">Pizzas &amp; Lanches</p></div>
-        <div class="resto-info"><p>Rua Bahia, 678</p><p>(37) 99984-3856</p></div>
-      </div>
-      <div class="resto-item">
-        <div><p class="resto-name">A Casa da Pizza</p><p class="resto-type">Pizzas</p></div>
-        <div class="resto-info"><p>Av. São Paulo, 200 — Centro</p><p>(37) 99875-9000</p></div>
-      </div>
-      <div class="resto-item">
-        <div><p class="resto-name">Garimpub</p><p class="resto-type">Drinks &amp; Bebidas</p></div>
-        <div class="resto-info"><p>Praça JK, 27</p><p>(37) 99828-4308</p></div>
-      </div>
-      <div class="resto-item">
-        <div><p class="resto-name">Ansiosos Burger</p><p class="resto-type">Hambúrguer Artesanal</p></div>
-        <div class="resto-info"><p>Rua Rio Grande do Norte, 20</p><p>(37) 99919-9218</p></div>
-      </div>
-    </div>
-    <div style="margin-top:32px;">
-      <p class="section-tag" style="margin-bottom:12px;">Supermercados</p>
-      <div class="resto-list">
-        <div class="resto-item">
-          <div><p class="resto-name">Serra Supermercado</p></div>
-          <div class="resto-info"><p>Av. São Paulo, 166 — Centro</p><p>(37) 99138-7582</p></div>
+        <div>
+          <p class="resto-name">Restaurante do Bino</p>
+          <p class="resto-type">Regional · Almoço</p>
         </div>
-        <div class="resto-item">
-          <div><p class="resto-name">Supermercado Reis</p></div>
-          <div class="resto-info"><p>Rua Ubirajara Lima, 110 — Centro</p><p>(37) 3435-1355</p></div>
+        <div class="resto-info">
+          <p>Em frente à prainha<br>Fins de semana</p>
+        </div>
+      </div>
+      <div class="resto-item">
+        <div>
+          <p class="resto-name">Mercadinho Central</p>
+          <p class="resto-type">Mercado · Abastecimento</p>
+        </div>
+        <div class="resto-info">
+          <p>Centro de Vargem Bonita<br>Seg–Sáb</p>
+        </div>
+      </div>
+      <div class="resto-item">
+        <div>
+          <p class="resto-name">Padaria São Francisco</p>
+          <p class="resto-type">Padaria · Café da manhã</p>
+        </div>
+        <div class="resto-info">
+          <p>Centro · Abre cedo<br>Todos os dias</p>
         </div>
       </div>
     </div>
@@ -708,10 +744,16 @@
 <footer>
   <h2>Obrigado!</h2>
   <p>Esperamos que você tenha uma estadia inesquecível.<br>Sua avaliação no aplicativo é muito importante para nós ⭐⭐⭐⭐⭐</p>
-  <a class="insta" href="https://instagram.com/beira_rio_casa_canastra" target="_blank">@beira_rio_casa_canastra</a>
+  <div style="margin: 0 0 24px;">
+    <a class="btn-instagram" href="https://www.instagram.com/beira_rio_casa_canastra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      Ver no Instagram
+    </a>
+  </div>
   <p class="tagline">Com carinho, da nossa família para a sua.</p>
 </footer>
 
-
-
-</body></html>
+</body>
+</html>
