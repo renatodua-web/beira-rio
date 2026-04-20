@@ -24,7 +24,7 @@
     color: var(--texto);
     font-weight: 300;
   }
- 
+
   /* HERO */
   .hero {
     background: linear-gradient(160deg, var(--azul) 0%, var(--verde) 100%);
@@ -81,7 +81,7 @@
     display: inline-block;
     border-radius: 2px;
   }
- 
+
   /* NAV */
   .nav-pills {
     display: flex;
@@ -111,7 +111,7 @@
     background: var(--verde);
     color: white;
   }
- 
+
   /* SECTIONS */
   section {
     padding: 64px 20px;
@@ -138,7 +138,7 @@
     margin-bottom: 32px;
     color: var(--texto);
   }
- 
+
   /* ABOUT */
   .stats-row {
     display: flex;
@@ -170,7 +170,7 @@
     opacity: 0.85;
   }
   p { line-height: 1.75; font-size: 15px; color: #444; margin-bottom: 16px; }
- 
+
   /* HOW TO GET THERE */
   .steps { counter-reset: step; }
   .step {
@@ -205,7 +205,7 @@
     line-height: 1.6;
   }
   .alert-box strong { display: block; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px; opacity: 0.8; }
- 
+
   /* CHECKIN/CHECKOUT */
   .two-col {
     display: grid;
@@ -248,7 +248,7 @@
     color: var(--verde-claro);
     font-size: 12px;
   }
- 
+
   /* LINEN */
   .linen-grid {
     display: grid;
@@ -272,7 +272,7 @@
     margin-bottom: 10px;
   }
   .linen-card p { font-size: 14px; color: #555; margin: 0; }
- 
+
   /* WIFI */
   .wifi-box {
     background: var(--azul);
@@ -326,7 +326,7 @@
     left: 0;
     font-size: 13px;
   }
- 
+
   /* GASTRONOMY */
   .resto-list { display: flex; flex-direction: column; gap: 16px; }
   .resto-item {
@@ -356,7 +356,7 @@
   .resto-info { text-align: right; }
   .resto-info p { font-size: 13px; color: #888; margin: 0; line-height: 1.6; }
   .resto-info a { color: var(--azul); text-decoration: none; }
- 
+
   /* ATTRACTIONS */
   .tip-list { display: flex; flex-direction: column; gap: 10px; }
   .tip-item {
@@ -392,7 +392,7 @@
   }
   .guide-box strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--dourado); margin-bottom: 6px; }
   .guide-box p { margin: 0; font-size: 14px; color: #555; }
- 
+
   /* EMERGENCY */
   .emergency-grid {
     display: grid;
@@ -422,7 +422,7 @@
     font-weight: 700;
   }
   .emerg-card p { font-size: 12px; color: #888; margin: 4px 0 0; }
- 
+
   /* CHECKOUT CHECKLIST */
   .checklist { list-style: none; display: flex; flex-direction: column; gap: 10px; }
   .checklist li {
@@ -448,7 +448,7 @@
     color: white;
     font-size: 13px;
   }
- 
+
   /* FOOTER */
   footer {
     background: var(--texto);
@@ -465,13 +465,6 @@
     color: rgba(255,255,255,0.6);
     font-size: 14px;
     margin-bottom: 24px;
-  }
-  .hero-logo {
-    max-width: 280px;
-    width: 80%;
-    margin: 0 auto 12px;
-    display: block;
-    filter: brightness(1.1) drop-shadow(0 4px 16px rgba(0,0,0,0.3));
   }
   footer .tagline {
     margin-top: 40px;
@@ -507,14 +500,14 @@
 </style>
 </head>
 <body>
- 
+
 <!-- HERO -->
 <div class="hero">
   <p class="hero-label">Bem-vindo(a) à</p>
   <h1>Beira Rio<br><em>Casa Canastra</em></h1>
   <p class="hero-address">Rua Diamantina, 188 · Centro · Vargem Bonita/MG · Serra da Canastra</p>
 </div>
- 
+
 <!-- NAV -->
 <nav class="nav-pills">
   <a href="#sobre">A Casa</a>
@@ -525,7 +518,7 @@
   <a href="#emergencia">Emergências</a>
   <a href="#checkout">Antes de Sair</a>
 </nav>
- 
+
 <!-- COMO CHEGAR -->
 <section id="chegada-dir">
   <div class="container">
@@ -541,18 +534,17 @@
       <strong>⚠ Atenção GPS</strong>
       O endereço exato pode confundir o GPS. Use o nome <strong>"PRAIA DO BINO"</strong> como destino — a casa fica em frente.
     </div>
-  
-  <div style="text-align:center; margin: 32px 0 0;">
-    <a class="btn-localizacao" href="https://maps.app.goo.gl/kZL1R4kFxAwBvh2x7" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-      </svg>
-      Ver Localização
-    </a>
-  </div>
+    <div style="text-align:center; margin: 32px 0 0;">
+      <a class="btn-localizacao" href="https://maps.app.goo.gl/kZL1R4kFxAwBvh2x7" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Ver Localização
+      </a>
+    </div>
   </div>
 </section>
- 
+
 <!-- SOBRE A CASA -->
 <section id="sobre">
   <div class="container">
@@ -568,7 +560,7 @@
     <p>Os quartos têm ar-condicionado quente/frio. A prainha fica logo em frente — pé na areia — permitindo banho nas águas tranquilas do fascinante rio. A Cachoeira Casca D'Anta, maior queda do Rio São Francisco com 186 metros, está a apenas 23 km.</p>
   </div>
 </section>
- 
+
 <!-- CHECK-IN / CHECK-OUT -->
 <section id="chegada">
   <div class="container">
@@ -598,7 +590,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ROUPA DE CAMA -->
 <section id="cama">
   <div class="container">
@@ -620,7 +612,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- WIFI -->
 <section id="wifi">
   <div class="container">
@@ -640,7 +632,7 @@
     </ul>
   </div>
 </section>
- 
+
 <!-- GASTRONOMIA -->
 <section id="gastronomia">
   <div class="container">
@@ -677,7 +669,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- PASSEIOS -->
 <section id="passeios">
   <div class="container">
@@ -698,7 +690,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- EMERGÊNCIAS -->
 <section id="emergencia">
   <div class="container">
@@ -725,7 +717,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ANTES DE SAIR -->
 <section id="checkout">
   <div class="container">
@@ -747,7 +739,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <h2>Obrigado!</h2>
@@ -762,6 +754,6 @@
   </div>
   <p class="tagline">Com carinho, da nossa família para a sua.</p>
 </footer>
- 
+
 </body>
 </html>
