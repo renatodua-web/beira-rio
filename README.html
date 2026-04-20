@@ -24,7 +24,7 @@
     color: var(--texto);
     font-weight: 300;
   }
- 
+
   /* HERO */
   .hero {
     background: linear-gradient(160deg, var(--azul) 0%, var(--verde) 100%);
@@ -81,7 +81,7 @@
     display: inline-block;
     border-radius: 2px;
   }
- 
+
   /* NAV */
   .nav-pills {
     display: flex;
@@ -90,9 +90,7 @@
     padding: 20px 24px;
     background: white;
     box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+
     justify-content: center;
   }
   .nav-pills a {
@@ -111,7 +109,7 @@
     background: var(--verde);
     color: white;
   }
- 
+
   /* SECTIONS */
   section {
     padding: 64px 20px;
@@ -138,7 +136,7 @@
     margin-bottom: 32px;
     color: var(--texto);
   }
- 
+
   /* ABOUT */
   .stats-row {
     display: flex;
@@ -170,7 +168,7 @@
     opacity: 0.85;
   }
   p { line-height: 1.75; font-size: 15px; color: #444; margin-bottom: 16px; }
- 
+
   /* HOW TO GET THERE */
   .steps { counter-reset: step; }
   .step {
@@ -205,7 +203,7 @@
     line-height: 1.6;
   }
   .alert-box strong { display: block; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px; opacity: 0.8; }
- 
+
   /* CHECKIN/CHECKOUT */
   .two-col {
     display: grid;
@@ -218,6 +216,7 @@
     border-radius: 4px;
     padding: 28px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border: 1px solid rgba(74, 124, 89, 0.25);
   }
   .info-card h3 {
     font-family: 'Playfair Display', serif;
@@ -248,7 +247,7 @@
     color: var(--verde-claro);
     font-size: 12px;
   }
- 
+
   /* LINEN */
   .linen-grid {
     display: grid;
@@ -262,6 +261,7 @@
     padding: 24px;
     border-radius: 4px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border: 1px solid rgba(74, 124, 89, 0.25);
   }
   .linen-card h4 {
     font-size: 11px;
@@ -272,7 +272,7 @@
     margin-bottom: 10px;
   }
   .linen-card p { font-size: 14px; color: #555; margin: 0; }
- 
+
   /* WIFI */
   .wifi-box {
     background: var(--azul);
@@ -326,7 +326,7 @@
     left: 0;
     font-size: 13px;
   }
- 
+
   /* GASTRONOMY */
   .resto-list { display: flex; flex-direction: column; gap: 16px; }
   .resto-item {
@@ -334,6 +334,7 @@
     padding: 20px 24px;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid rgba(74, 124, 89, 0.25);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -356,7 +357,7 @@
   .resto-info { text-align: right; }
   .resto-info p { font-size: 13px; color: #888; margin: 0; line-height: 1.6; }
   .resto-info a { color: var(--azul); text-decoration: none; }
- 
+
   /* ATTRACTIONS */
   .tip-list { display: flex; flex-direction: column; gap: 10px; }
   .tip-item {
@@ -367,6 +368,7 @@
     background: white;
     border-radius: 4px;
     box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+    border: 1px solid rgba(74, 124, 89, 0.25);
   }
   .tip-num {
     background: var(--dourado);
@@ -392,7 +394,7 @@
   }
   .guide-box strong { display: block; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--dourado); margin-bottom: 6px; }
   .guide-box p { margin: 0; font-size: 14px; color: #555; }
- 
+
   /* EMERGENCY */
   .emergency-grid {
     display: grid;
@@ -404,6 +406,7 @@
     padding: 24px;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: 1px solid rgba(74, 124, 89, 0.25);
     text-align: center;
   }
   .emerg-icon { font-size: 2rem; margin-bottom: 10px; }
@@ -422,7 +425,7 @@
     font-weight: 700;
   }
   .emerg-card p { font-size: 12px; color: #888; margin: 4px 0 0; }
- 
+
   /* CHECKOUT CHECKLIST */
   .checklist { list-style: none; display: flex; flex-direction: column; gap: 10px; }
   .checklist li {
@@ -435,6 +438,7 @@
     font-size: 14px;
     color: #555;
     box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    border: 1px solid rgba(74, 124, 89, 0.25);
   }
   .check-icon {
     width: 24px;
@@ -448,7 +452,7 @@
     color: white;
     font-size: 13px;
   }
- 
+
   /* FOOTER */
   footer {
     background: var(--texto);
@@ -500,14 +504,15 @@
 </style>
 </head>
 <body>
- 
+
 <!-- HERO -->
 <div class="hero">
+  <img src="fotos/logobeirario.jpg" alt="Logo Beira Rio Casa Canastra" style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid rgba(255,255,255,0.5); margin-bottom:20px; display:block; margin-left:auto; margin-right:auto;">
   <p class="hero-label">Bem-vindo(a) à</p>
   <h1>Beira Rio<br><em>Casa Canastra</em></h1>
   <p class="hero-address">Rua Diamantina, 188 · Centro · Vargem Bonita/MG · Serra da Canastra</p>
 </div>
- 
+
 <!-- NAV -->
 <nav class="nav-pills">
   <a href="#sobre">A Casa</a>
@@ -518,7 +523,7 @@
   <a href="#emergencia">Emergências</a>
   <a href="#checkout">Antes de Sair</a>
 </nav>
- 
+
 <!-- COMO CHEGAR -->
 <section id="chegada-dir">
   <div class="container">
@@ -544,7 +549,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- SOBRE A CASA -->
 <section id="sobre">
   <div class="container">
@@ -560,7 +565,7 @@
     <p>Os quartos têm ar-condicionado quente/frio. A prainha fica logo em frente — pé na areia — permitindo banho nas águas tranquilas do fascinante rio. A Cachoeira Casca D'Anta, maior queda do Rio São Francisco com 186 metros, está a apenas 23 km.</p>
   </div>
 </section>
- 
+
 <!-- CHECK-IN / CHECK-OUT -->
 <section id="chegada">
   <div class="container">
@@ -590,7 +595,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ROUPA DE CAMA -->
 <section id="cama">
   <div class="container">
@@ -612,7 +617,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- WIFI -->
 <section id="wifi">
   <div class="container">
@@ -621,9 +626,9 @@
     <div class="wifi-box">
       <div class="wifi-icon">📶</div>
       <p class="network">Rede</p>
-      <p class="ssid">BeiraRio_Casa</p>
+      <p class="ssid">casa beira rio</p>
       <p class="pass-label">Senha</p>
-      <p class="pass">canastra2024</p>
+      <p class="pass">Canastra25</p>
     </div>
     <ul class="notes-list">
       <li>O sinal cobre toda a casa e área externa próxima.</li>
@@ -632,7 +637,7 @@
     </ul>
   </div>
 </section>
- 
+
 <!-- GASTRONOMIA -->
 <section id="gastronomia">
   <div class="container">
@@ -641,35 +646,94 @@
     <div class="resto-list">
       <div class="resto-item">
         <div>
-          <p class="resto-name">Restaurante do Bino</p>
-          <p class="resto-type">Regional · Almoço</p>
+          <p class="resto-name">Caipirão da Canastra</p>
+          <p class="resto-type">Regional · Macarrão flambado</p>
         </div>
         <div class="resto-info">
-          <p>Em frente à prainha<br>Fins de semana</p>
+          <p>Rua Ubirajara Lima, 448<br>18h às 23h · (37) 98806-2010</p>
         </div>
       </div>
       <div class="resto-item">
         <div>
-          <p class="resto-name">Mercadinho Central</p>
-          <p class="resto-type">Mercado · Abastecimento</p>
+          <p class="resto-name">Villa Serra Trattoria</p>
+          <p class="resto-type">Massas · Porções</p>
         </div>
         <div class="resto-info">
-          <p>Centro de Vargem Bonita<br>Seg–Sáb</p>
+          <p>Praça JK, 46 – Centro<br>(37) 98852-5594</p>
         </div>
       </div>
       <div class="resto-item">
         <div>
-          <p class="resto-name">Padaria São Francisco</p>
-          <p class="resto-type">Padaria · Café da manhã</p>
+          <p class="resto-name">Esquina de Minas</p>
+          <p class="resto-type">Lanches · Porções</p>
         </div>
         <div class="resto-info">
-          <p>Centro · Abre cedo<br>Todos os dias</p>
+          <p>Av. São Paulo<br>(37) 99846-5858</p>
+        </div>
+      </div>
+      <div class="resto-item">
+        <div>
+          <p class="resto-name">Pizzaria – Hamburgueria É de Casa</p>
+          <p class="resto-type">Pizzas · Lanches</p>
+        </div>
+        <div class="resto-info">
+          <p>Rua Bahia, 678<br>(37) 99984-3856</p>
+        </div>
+      </div>
+      <div class="resto-item">
+        <div>
+          <p class="resto-name">A Casa da Pizza</p>
+          <p class="resto-type">Pizzas</p>
+        </div>
+        <div class="resto-info">
+          <p>Av. São Paulo, 200 – Centro<br>(37) 99875-9000</p>
+        </div>
+      </div>
+      <div class="resto-item">
+        <div>
+          <p class="resto-name">Garimpub</p>
+          <p class="resto-type">Drinks · Bebidas</p>
+        </div>
+        <div class="resto-info">
+          <p>Praça JK, 27<br>(37) 99828-4308</p>
+        </div>
+      </div>
+      <div class="resto-item">
+        <div>
+          <p class="resto-name">Ansiosos Burger</p>
+          <p class="resto-type">Hambúrguer Artesanal</p>
+        </div>
+        <div class="resto-info">
+          <p>Rua Rio Grande do Norte, 20<br>(37) 99919-9218</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="section-tag" style="margin-top: 40px;">Facilidades</p>
+    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 20px; color: var(--texto);">Supermercados</h3>
+    <div class="resto-list">
+      <div class="resto-item">
+        <div>
+          <p class="resto-name">Serra Supermercado</p>
+          <p class="resto-type">Supermercado</p>
+        </div>
+        <div class="resto-info">
+          <p>Av. São Paulo, 166 – Centro<br>(37) 99138-7582</p>
+        </div>
+      </div>
+      <div class="resto-item">
+        <div>
+          <p class="resto-name">Supermercado Reis</p>
+          <p class="resto-type">Supermercado</p>
+        </div>
+        <div class="resto-info">
+          <p>Rua Ubirajara Lima, 110 – Centro<br>(37) 3435-1355</p>
         </div>
       </div>
     </div>
   </div>
 </section>
- 
+
 <!-- PASSEIOS -->
 <section id="passeios">
   <div class="container">
@@ -690,7 +754,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- EMERGÊNCIAS -->
 <section id="emergencia">
   <div class="container">
@@ -717,7 +781,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ANTES DE SAIR -->
 <section id="checkout">
   <div class="container">
@@ -739,7 +803,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <h2>Obrigado!</h2>
@@ -754,6 +818,6 @@
   </div>
   <p class="tagline">Com carinho, da nossa família para a sua.</p>
 </footer>
- 
+
 </body>
 </html>
