@@ -338,8 +338,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 480px) {
+    .resto-item { flex-direction: column; gap: 6px; }
+    .resto-info { text-align: left !important; }
   }
   .resto-name {
     font-family: 'Playfair Display', serif;
